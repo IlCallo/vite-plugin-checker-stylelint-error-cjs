@@ -1,0 +1,13 @@
+{
+  "!(**/template/**)!(.eslintrc)*.{js,ts}": [
+    "eslint --fix --max-warnings=0",
+    "prettier --write"
+  ],
+  "!(**/template/**)*.{css,scss}": ["stylelint --fix", "prettier --write"],
+  "!(**/template/**).vue": [
+    "eslint --fix --max-warnings=0",
+    "stylelint --fix --max-warnings=0",
+    "prettier --write"
+  ],
+  "!(**/template/**)*.{json,md,graphql}": ["prettier --write"]
+}
